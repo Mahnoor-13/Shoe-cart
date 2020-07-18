@@ -33,4 +33,4 @@ jobs:
     - name: Install Surge
       run: npm install --global surge
     - name: Deploying to surge
-      run: surge ./build shoe-shop.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build shoe-shop-web.surge.sh --token ${{ secrets.SURGE_TOKEN }}
