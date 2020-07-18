@@ -1,0 +1,124 @@
+header {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    align-items: center;
+  }
+  header .logo a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(219, 74, 176);
+  }
+  header nav {
+    display: flex;
+  }
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: pink;
+    padding: 0 15px;
+    font-size: 2rem;
+  }
+  nav ul li a:hover {
+    color: rgb(219, 74, 176);
+    transition: 0.1s;
+    border-radius: 50px;
+    text-decoration: none;
+  }
+  nav .nav-cart {
+    cursor: pointer;
+    position: relative;
+  }
+  nav .nav-cart span {
+    position: absolute;
+    top: -12px;
+    right: -7px;
+    background: rgb(219, 74, 176);
+    font-size: 10px;
+    color: white;
+    padding: 3px 3px;
+    border-radius: 80px;
+    z-index: -1;
+  }
+  header .menu,
+  header .close {
+    cursor: pointer;
+    display: none;
+  }
+  @media (max-width: 744px) {
+    header ul {
+      position: fixed;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      background: white;
+      z-index: 99;
+      opacity: 0.97;
+      transition: 0.5s linear;
+    }
+    header .menu,
+    header .close {
+      display: block;
+    }
+    header .close {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+    header ul.toggle {
+      top: 0;
+    }
+  }
+   
+  /* header {
+    background-color: lightgray;
+  } 
+  
+   .shoe-logo {
+    width: 20%;
+  } 
+  .logo-h {
+    width: 62%;
+  } 
+   @media (max-width: 320px) {
+    nav .nav-cart {
+      position: absolute;
+      left: 90%;
+    } 
+   
+    .logo-h {
+      display: inline;
+      margin: 5%;
+    } 
+   }
+  
+  @media(max-width: 876px) {
+    header nav {
+      margin: -1%;
+    }
+  } */
+  
+  /* .bg {
+  background-image: url("https://previews.123rf.com/images/halfpoint/halfpoint1505/halfpoint150500116/39484653-various-running-shoes-laid-on-a-wooden-floor-background.jpg");
+    background: rgb(254, 254, 255);
+    width: 83%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  } */
+  .logo {
+    text-align: center;
+  }
